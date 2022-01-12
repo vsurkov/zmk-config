@@ -53,20 +53,13 @@
 // |       |  ALT   |  CTRL | SHIFT |       | CAPS  |                   |  <-  |   v    |   ^    |  ->   |       |        |
 // |       |  UNDO  |  CUT  | COPY  | PASTE | MINUS |        |  |       | PGD  |  HOME  |  END   |       |   ?   |        |
 //                  |       |       |       |       |    6   |  | MINUS |  DEL |        |        |       |
-//             bindings = <
-// &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4               &trans    &trans    &trans   &trans    &trans  &kp MINUS
-// &trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                     &kp PG_UP &trans    &trans   &trans    &trans  &kp EQUAL
-// &trans     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                   &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans  &trans
-// &trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &kp MINUS &trans    &trans &kp PG_DN &kp HOME  &kp END  &trans    &kp QMARK  &trans
-//                         &trans       &trans       &trans       &trans    &kp N6    &kp MINUS &kp DEL &trans   &trans   &trans
-//             >;
             bindings = <
- &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &trans    &trans    &trans   &trans    &trans  &trans
- &trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                   &kp PG_UP &trans    &kp UP   &trans    &kp N0  &trans
- &trans     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
- &trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans
-                         &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
-             >;
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4               &trans    &trans    &trans   &trans    &trans  &kp MINUS
+&trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                     &kp PG_UP &trans    &trans   &trans    &trans  &kp EQUAL
+&trans     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                   &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans  &trans
+&trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &kp MINUS &trans    &trans &kp PG_DN &kp HOME  &kp END  &trans    &kp QMARK  &trans
+                        &trans       &trans       &trans       &trans    &kp N6    &kp MINUS &kp DEL &trans   &trans   &trans
+            >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
     };
